@@ -1,0 +1,13 @@
+create table ranges
+(
+	ip_start INT(4),
+	ip_end INT(4),
+	cc VARCHAR(2),
+	country VARCHAR(32),
+	region VARCHAR(32),
+	city VARCHAR(32),
+	status INT default 0,
+	dt_start INT,
+	dt_end INT
+);
+

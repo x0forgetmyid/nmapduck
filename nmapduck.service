@@ -1,0 +1,12 @@
+[Unit]
+Description=nmapduck - user service
+After=syslog.target network.target
+
+[Service]
+Type=simplt
+User=user
+WorkingDirectory=/home/user
+ExecStart=/usr/bin/python3 /home/user/nmapduck.py
+
+[Install]
+WantedBy=multi-user.target
